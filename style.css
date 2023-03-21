@@ -1,0 +1,76 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Add styles for header, main, and footer */
+header {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Add styles for typography and other elements */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Add styles for interactive elements (e.g., hover effects) */
+a:hover {
+    color: #555;
+}
+
+/* Add styles for the toggle button */
+#menu-toggle {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Add styles for the responsive navigation menu */
+  nav.open ul {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      text-align: center;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav.open ul {
+      display: block;
+    }
+  
+    #menu-toggle {
+      display: inline-block;
+    }
+  }
+  
