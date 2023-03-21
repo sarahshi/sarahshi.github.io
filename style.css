@@ -1,3 +1,10 @@
+
+
+
+
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 /* Reset browser styles */
 * {
     margin: 0;
@@ -6,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -49,28 +56,64 @@ a:hover {
     background-color: transparent;
     border: none;
     cursor: pointer;
-  }
-  
-  /* Add styles for the responsive navigation menu */
-  nav.open ul {
+}
+
+/* Add styles for the responsive navigation menu */
+nav.open ul {
     display: block;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     nav {
-      text-align: center;
+        text-align: center;
     }
-  
+
     nav ul {
-      display: none;
+        display: none;
     }
-  
+
     nav.open ul {
-      display: block;
+        display: block;
     }
-  
+
     #menu-toggle {
-      display: inline-block;
+        display: inline-block;
     }
-  }
-  
+}
+
+/* Add styles for full-screen sections */
+.full-screen-section {
+    width: 100%;
+    min-height: 100vh; /* vh stands for viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-bg {
+    background-image: url('img/IMG_9757.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.research-bg {
+    background-color: #366EC3; /* Replace with desired color or use 'background-image' property for an image */
+}
+
+/* 
+.publications-bg {
+    background-image: url('publications_background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.teaching-bg {
+    background-image: url('teaching_background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  */
