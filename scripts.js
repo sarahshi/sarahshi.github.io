@@ -27,40 +27,40 @@ navLinks.forEach((link) => {
 });
 
 // Create a scrollingText function
-function scrollingText() {
-  const text = "This is a scrolling text example. ";
-  const container = document.createElement("div");
-  container.className = "scrolling-container";
-  container.style.overflow = "hidden";
-  container.style.position = "fixed";
-  container.style.whiteSpace = "nowrap";
-  container.style.top = "20px";
-  container.style.left = "100%";
-  container.style.fontSize = "24px";
-  container.innerText = text;
+// function scrollingText() {
+//   const text = "This is a scrolling text example. ";
+//   const container = document.createElement("div");
+//   container.className = "scrolling-container";
+//   container.style.overflow = "hidden";
+//   container.style.position = "fixed";
+//   container.style.whiteSpace = "nowrap";
+//   container.style.top = "20px";
+//   container.style.left = "100%";
+//   container.style.fontSize = "24px";
+//   container.innerText = text;
 
-  document.body.appendChild(container);
+//   document.body.appendChild(container);
 
-  // Define scroll speed
-  const speed = 2;
+//   // Define scroll speed
+//   const speed = 2;
 
-  // Animate the scrolling text
-  function animate() {
-    const containerWidth = container.getBoundingClientRect().width;
-    const currentPosition = parseFloat(container.style.left);
-    const newPosition = currentPosition - speed;
+//   // Animate the scrolling text
+//   function animate() {
+//     const containerWidth = container.getBoundingClientRect().width;
+//     const currentPosition = parseFloat(container.style.left);
+//     const newPosition = currentPosition - speed;
 
-    if (newPosition + containerWidth < 0) {
-      container.style.left = "100%";
-    } else {
-      container.style.left = newPosition + "px";
-    }
+//     if (newPosition + containerWidth < 0) {
+//       container.style.left = "100%";
+//     } else {
+//       container.style.left = newPosition + "px";
+//     }
 
-    requestAnimationFrame(animate);
-  }
+//     requestAnimationFrame(animate);
+//   }
 
-  requestAnimationFrame(animate);
-}
+//   requestAnimationFrame(animate);
+// }
 
-// Initialize scrollingText function when the page loads
-window.addEventListener("load", scrollingText);
+// // Initialize scrollingText function when the page loads
+// window.addEventListener("load", scrollingText);
