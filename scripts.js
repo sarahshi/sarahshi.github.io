@@ -36,8 +36,6 @@ imgs.forEach(img => {
 });
 
 
-
-
 // Create a scrollingText function
 function scrollingText(element) {
   const container = document.createElement("div");
