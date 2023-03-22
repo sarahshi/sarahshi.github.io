@@ -46,7 +46,9 @@ function scrollingText(element) {
   container.style.top = element.offsetTop + "px";
   container.style.left = "100%";
   container.style.fontSize = "24px";
-  container.appendChild(element);
+  
+  const clonedElement = element.cloneNode(true);
+  container.appendChild(clonedElement);
 
   document.body.appendChild(container);
 
