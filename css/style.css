@@ -200,29 +200,35 @@ nav.open ul {
 
 .home-bg {
     background-image: url('img/IMG_9757.jpeg');
-    background-size: cover;
+    background-size: 100%; 
+    /* background-size: cover; */
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .research-bg {
     background-color: #366EC3; /* Replace with desired color or use 'background-image' property for an image */
+    background-size: 100%; 
 }
  
 .field-bg {
     background-color: #F3E4E7; /* Replace with desired color or use 'background-image' property for an image */
+    background-size: 100%; 
 }
 
 .code-bg {
     background-color: #d7efed; /* Replace with desired color or use 'background-image' property for an image */
+    background-size: 100%; 
 } 
 
 .teaching-bg {
     background-color: #FFEDAD; /* Replace with desired color or use 'background-image' property for an image */
+    background-size: 100%; 
 } 
 
 .contact-bg {
     background-color: #DEF0DA; /* Replace with desired color or use 'background-image' property for an image */
+    background-size: 100%; 
 } 
 
 .custom-links {

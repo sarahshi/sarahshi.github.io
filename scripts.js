@@ -50,7 +50,7 @@ function scrollingText(element) {
   const clonedElement = element.cloneNode(true);
   container.appendChild(clonedElement);
 
-  element.parentElement.appendChild(container); // change this line
+  element.parentElement.parentElement.appendChild(container); // change this line
 
   // Define scroll speed
   const speed = 2;
