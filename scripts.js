@@ -1,10 +1,10 @@
 // Responsive navigation menu
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav");
+// const menuToggle = document.getElementById("menu-toggle");
+// const nav = document.querySelector("nav");
 
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("open");
-});
+// menuToggle.addEventListener("click", () => {
+//   nav.classList.toggle("open");
+// });
 
 // Smooth scrolling
 const navLinks = document.querySelectorAll(".nav-link");
@@ -41,16 +41,16 @@ function scrollingText(element) {
   const container = document.createElement("div");
   container.className = "scrolling-container";
   container.style.overflow = "hidden";
-  container.style.position = "fixed";
+  container.style.position = "absolute";
   container.style.whiteSpace = "nowrap";
   container.style.top = element.offsetTop + "px";
   container.style.left = "100%";
   container.style.fontSize = "24px";
-  
+
   const clonedElement = element.cloneNode(true);
   container.appendChild(clonedElement);
 
-  document.body.appendChild(container);
+  element.parentElement.appendChild(container); // change this line
 
   // Define scroll speed
   const speed = 2;
@@ -72,6 +72,7 @@ function scrollingText(element) {
 
   requestAnimationFrame(animate);
 }
+
 
 // Initialize scrollingText function when the page loads
 window.addEventListener("load", function () {
