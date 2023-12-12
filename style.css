@@ -259,10 +259,6 @@ nav.open ul {
 
 .columns {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 4px;
-    width: 100%;
 }
 
 .column {
@@ -286,13 +282,19 @@ nav.open ul {
 }
 
 @media (min-width: 1000px) {
-    .field-grid {
-        grid-template-columns: 50% 50%; 
+    .grid-figure-left  {
+        padding-right: 20px;
+    }
+    .columns{
+        margin-bottom: 20px;
     }
 } 
 @media (max-width: 1000px) {
-    .field-grid {
-        grid-template-columns: 100%; 
+    .grid-figure-left {
+        padding-right: 0
+    }
+    .column{
+        margin-bottom: 20px;
     }
 } 
 
@@ -303,16 +305,7 @@ figure {
     width: 100%;
 }
 
-.grid-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 5px 0;
-    padding: 0 7px;
-}
-  
-  figcaption {
+figcaption {
     text-align: center;
     font-weight: 335;
     font-size: 1.8rem;
