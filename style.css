@@ -114,7 +114,7 @@ h5 {
 h6 {
 	font-size: 2.5vmin;
     font-weight: 300;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -288,6 +288,9 @@ nav.open ul {
     .columns{
         margin-bottom: 20px;
     }
+    .caption-columns{
+        margin-bottom: 5px!important;
+    }
 } 
 @media (max-width: 1000px) {
     .grid-figure-left {
@@ -295,6 +298,9 @@ nav.open ul {
     }
     .column{
         margin-bottom: 20px;
+    }
+    .caption-column{
+        margin-bottom: 5px!important;
     }
 } 
 
