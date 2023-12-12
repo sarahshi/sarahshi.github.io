@@ -223,6 +223,10 @@ nav.open ul {
     max-width: 100%;
 }
 
+.content-wrapper{
+    padding: 0 20px;
+}
+
 .home-bg {
     background-image: url('././img/IMG_9757.jpeg');
     background-size: cover;
