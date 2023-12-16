@@ -8,40 +8,77 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
     </style>
+    <script src="scripts.js"></script> 
 </head>
-<body>
+<body id="body">
     <a id="site_menu_button" class="site-menu">
-        <img width="60" alt="plus sign" src="plus.svg"></img>
+        <img id="plusSign" width="60" alt="plus sign" src="plus.svg"></img>
+        <img id="xSign" style="display:none;" width="60" alt="x sign" src="whitecross.svg"></img>
     </a>
+    <div>
+        <ul id="dropdown-menu" style="display: none">
+            <li>
+                <a href="#home">Homepage</a>
+            </li>
+            <li>
+                <a href="#research">Research</a>
+            </li>
+            <li>
+                <a href="#field">Field</a>
+            </li>
+            <li>
+                <a href="#code">Code</a>
+            </li>
+            <li>
+                <a href="#teaching">Teaching</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
         <section id="home" class="full-screen-section home-bg">
-            <div style="margin-left: 1.4rem; padding-top: 3rem;">
+            <div style="margin-left: 1.4rem; padding-top: 3rem; line-height: 2;">
                 <h1>Sarah C. Shi</h1> <br>
-                <h3>
-                Data Science Fellow at the Lamont-Doherty Earth Observatory (2022-Present)
-                <br>
-                University of Cambridge, M.Phil in Earth Science (2021-2022); Euretta J. Kellett Fellow
-                <br>
-                Columbia University, B.A. in Earth Science (2016-2020)
-                <br>
-                <span class="custom-links">
-                    <a href="https://github.com/sarahshi" target="_blank">GitHub</a> / <a href="https://www.icloud.com/iclouddrive/0d77rDnV2WgwfSKiwqmtwQSrw#SCS_RESUME_Spring23" target="_blank">C.V.</a> 
-                </span>
-                <h3>
-                @sarahcshi
+                <h2>
+                    Data Science Fellow at the Lamont-Doherty Earth Observatory (2022-Present)
+                    <br>
+                    <br>
+                    University of Cambridge, M.Phil in Earth Science (2021-2022); Euretta J. Kellett Fellow
+                    <br>Columbia University, B.A. in Earth Science (2016-2020)
+                    <br>
+                    <span>
+                        <a class="custom-links" href="https://www.icloud.com/iclouddrive/0d77rDnV2WgwfSKiwqmtwQSrw#SCS_RESUME_Spring23" target="_blank">C.V.</a> 
+                        <br>
+                        <a class="custom-links" href="https://github.com/sarahshi" target="_blank">GitHub</a>
+                    </span>
+                </h2>
+                <h2>
+                    @sarahcshi
                 </h2>  
             </div>
         </section>
 
         <section id="research" class="full-screen-section research-bg">
             <div class="content-wrapper">
-                <h2>Research</h2>
+                
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Research</h2>
+                        </span>
+                        <span>
+                            <h2>Research</h2>
+                        </span>
+                    </div>
+                </div>
     
                 <div class="columns">
                     <div class="column">
                         <figure>
-                            <img src="img/fuegoerupt_filt.jpg" alt="Image description 1">
+                            <img style="padding-right: 15px;" src="img/fuegoerupt_filt.jpg" alt="Image description 1">
                             <figcaption>Understanding the syn-eruptive dynamics of the Fuego 2018 Eruption </figcaption>
                         </figure>
                     </div>
@@ -53,168 +90,197 @@
                     </div>
                 </div>
                 
-                <div class="single-column">
+                <div style="padding-bottom: 25px;">
                     <figure>
-                        <img src="img/test.png" alt="Image description 5">
+                        <img style="width: 100%" src="img/test.png" alt="Image description 5">
                         <figcaption>Computational methodologies for approaching uncertainty analyses in petrology </figcaption>
                     </figure>
                 </div>
-
-                <p>Outline your research interests, current projects, and future directions.</p>
             </div>
         </section>
-
-        <section id="code" class="full-screen-section code-bg">
-            <div class="content-wrapper">
-                <h2>Code</h2>
-                <p>PyBaselines, MIN_ML, Autoencoder</p>
-            </div>
-        </section>
-
-        <section id="teaching" class="full-screen-section teaching-bg">
-            <div class="content-wrapper">
-                <h2>Teaching</h2>
-
-                <h6>
-                    The <a href="https://github.com/sarahshi/earthchem-teaching" target="_blank">linked GitHub repository</a> contains cloud-hosted Python code for visualizing and understanding trends in petrologic data. We explore global chemical variability in mid-ocean ridge basalts (MORB), understand variations in mantle melting temperatures, and think about what this all means for crustal thicknesses and seismic velocities. </a>
-                    <a href="https://colab.research.google.com/github/sarahshi/earthchem-teaching/blob/main/SERC_MORB_colab.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-                <h6>
-            </div>
-        </section>
-
-
-
-
-
+        
         <section id="field" class="full-screen-section field-bg">
             <div class="content-wrapper">
-                <h2>Field</h2>
-    
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00011.JPG" alt="">
-                    </figure>
+                
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Field</h2>
+                        </span>
+                        <span>
+                            <h2>Field</h2>
+                        </span>
+                    </div>
                 </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00046.JPG" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00070.JPG" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00141.JPG" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00110.JPG" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00141.JPG" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00151.JPG" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/DSC00183.JPG" alt="">
-                    </figure>
-                </div>
-            </div>
-            <h6 align="center">Cornwall ESB Field Geology </h6>
 
-
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440684.jpg" alt="">
-                    </figure>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/DSC00011.JPG" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/DSC00046.JPG" alt="">
+                        </figure>
+                    </div>
                 </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440829.jpg" alt="">
-                    </figure>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/DSC00070.JPG" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/DSC00141.JPG" alt="">
+                        </figure>
+                    </div>
                 </div>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/DSC00110.JPG" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/DSC00141.JPG" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="columns caption-columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/DSC00151.JPG" alt="">
+                        </figure>
+                    </div>
+                    <div class="column caption-column">
+                        <figure>
+                            <img src="img/DSC00183.JPG" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <h6 style="text-align: center">Cornwall ESB Field Geology </h6>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/P1440684.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/P1440829.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/P1440768.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/P1440808.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/P1440555.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/P1440553.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/P1440621.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/P1440622.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="columns caption-columns">
+                    <div class="column">
+                        <figure class="grid-figure-left">
+                            <img src="img/P1440546.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="column caption-column">
+                        <figure>
+                            <img src="img/P1440745.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <h6 style="text-align: center">Iceland </h6>
             </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440768.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440808.jpg" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440555.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440553.jpg" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440621.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440622.jpg" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440546.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="column">
-                    <figure>
-                        <img src="img/P1440745.jpg" alt="">
-                    </figure>
-                </div>
-            </div>
-            <h6 align="center">Iceland </h6>
-
         </section>
 
-        <section id="contact" class="full-screen-section contact-bg">
+        <section id="code" style="min-height: fit-content" class="code-bg">
             <div class="content-wrapper">
-                <h2>Contact</h2>
-                <p> Feel free to contact me at sarah (dot) shi (at) columbia (dot) edu
-                </p>
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Code</h2>
+                        </span>
+                        <span>
+                            <h2>Code</h2>
+                        </span>
+                    </div>
+                </div>
+                <h6 style="text-align: center">PyBaselines, MIN_ML, Autoencoder</h6>
+        </section>
+
+        <section id="teaching" style="min-height: fit-content" class="teaching-bg">
+            <div class="content-wrapper">
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Teaching</h2>
+                        </span>
+                        <span>
+                            <h2>Teaching</h2>
+                        </span>
+                    </div>
+                </div>
+
+                <h6>
+                    The <a href="https://github.com/sarahshi/earthchem-teaching" target="_blank">linked GitHub repository</a> contains cloud-hosted 
+                    Python code for visualizing and understanding trends in petrologic data. We explore global chemical variability in mid-ocean 
+                    ridge basalts (MORB), understand variations in mantle melting temperatures, and think about what this all means for 
+                    crustal thicknesses and seismic velocities. </a>
+                    <a href="https://colab.research.google.com/github/sarahshi/earthchem-teaching/blob/main/SERC_MORB_colab.ipynb" target="_parent">
+                        <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+                    </a>
+                <h6>
+            </div>
+        </section>
+
+        <section id="contact" style="min-height: fit-content; padding-bottom: 30px" class="contact-bg">
+            <div class="content-wrapper">
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Contact</h2>
+                        </span>
+                        <span>
+                            <h2>Contact</h2>
+                        </span>
+                    </div>
+                </div>
+                <h6> Feel free to contact me at sarah (dot) shi (at) columbia (dot) edu</h6>
             </div>
         </section>
     </main>
-        
-    <script src="scripts.js"></script>
-
 </body>
 </html>

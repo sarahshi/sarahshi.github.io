@@ -28,6 +28,10 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+html{
+    font-size: 68.48%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -68,26 +72,25 @@ h1 {
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	font-size: 4.5rem;
+	font-size: 7rem;
 	line-height: 0.9;
 	color: rgba(0, 0, 0, 0.85);
 	}
 
-
 h2 {
 	font-style: normal;
-	font-weight: 335;
+	font-weight: 300;
 	padding: 0;
 	margin: 0;
 	color: rgba(0, 0, 0, 0.85);
-	font-size: 6vmin;
+	font-size: 3.2rem;
 	line-height: 1.4;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 h3 {
 	font-style: normal;
-	font-weight: 335;
+	font-weight: 300;
 	padding: 0;
 	margin: 0;
 	color: rgba(0, 0, 0, 0.85);
@@ -111,7 +114,7 @@ h5 {
 h6 {
 	font-size: 2.5vmin;
     font-weight: 300;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -124,6 +127,35 @@ p {
     position: fixed;
     z-index: 1;
 }
+
+.marquee {
+    min-height: 8rem;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee div {
+    display: block;
+    width: 200%;
+    height: fit-content;
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee span {
+    float: left;
+    width: 50%;
+    margin: 20px 0;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
 
 .surrounding-elements {
     padding: 10px;
@@ -183,12 +215,42 @@ nav.open ul {
     }
 }
 
+#dropdown-menu{
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    width: 200px;
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+li {
+    padding: 12px 16px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* Add styles for full-screen sections */
 .full-screen-section {
     width: 100%;
     min-height: 100vh; /* vh stands for viewport height */
     position: relative;
     max-width: 100%;
+}
+
+.content-wrapper{
+    padding: 0 20px;
 }
 
 .home-bg {
@@ -219,111 +281,76 @@ nav.open ul {
 } 
 
 .custom-links {
-    font-size: 6vmin;
-    font-weight: 335;
-    color: rgba(0, 0, 0, 0.85);
+    font-weight: 300;
+    color: #45a15c;
     margin-bottom: 1.4px;
+    text-decoration: none;
 }
-
-
 
 .columns {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    width: 100%;
 }
-
-/* .column {
-    flex: 1;
-    padding: 0 10px;
-    display: flex;
-    align-items: shrink;
-    width: 100%;
-    overflow: hidden;
-} */
 
 .column {
     flex: 1;
-    padding: 0 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  
+}
+
 .column img {
-    padding: 0 10px;
     width: 100%;
     height: 100%;
     max-width: 1250px;
     object-fit: cover;
-    margin-bottom: 0;
-    /* object-fit: scale-down; */
 }
 
-.single-column {
-    display: flex;
-    padding: 0 10px;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    width: 100%;
-    overflow: hidden;
+.field-grid{
+    padding: 0px 20px; 
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    column-gap: 20px; 
+    row-gap: 20px;
 }
 
-.single-column img {
-    width: 100%;
-    padding: 0 10px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* figure {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
-    object-fit: scale-down;
-} */
-
+@media (min-width: 1000px) {
+    .grid-figure-left  {
+        padding-right: 20px;
+    }
+    .columns{
+        margin-bottom: 20px;
+    }
+    .caption-columns{
+        margin-bottom: 5px!important;
+    }
+} 
+@media (max-width: 1000px) {
+    .grid-figure-left {
+        padding-right: 0
+    }
+    .column{
+        margin-bottom: 20px;
+    }
+    .caption-column{
+        margin-bottom: 5px!important;
+    }
+} 
 
 figure {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
-    flex: 1;
-  }
-  
-  figcaption {
+}
+
+figcaption {
     text-align: center;
     font-weight: 335;
-    font-size: 2.5vmin;
-    margin: 15px 0 0 0;
+    font-size: 1.8rem;
+    margin: 5px 0 0 0;
     flex: 1;
     display: flex;
     align-items: center;
     max-height: 100%;
   }
-  
-
-/* figcaption {
-    text-align: center;
-    font-weight: 335;
-    font-size: 2.5vmin; 
-    margin: 15px 0 0 0;
-    flex: 1;
-    max-width: 100%; 
-} */
 
 @media (max-width: 1000px) {
     .columns {

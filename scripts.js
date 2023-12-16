@@ -1,88 +1,33 @@
-// Responsive navigation menu
-// const menuToggle = document.getElementById("menu-toggle");
-// const nav = document.querySelector("nav");
+window.addEventListener("load", () => {
+    // Get elements from page
+    const button = document.getElementById("site_menu_button");
+    const menu = document.getElementById("dropdown-menu");
+    const xSign = document.getElementById("xSign");
+    const plusSign = document.getElementById("plusSign");
 
-// menuToggle.addEventListener("click", () => {
-//   nav.classList.toggle("open");
-// });
-
-// Smooth scrolling
-const navLinks = document.querySelectorAll(".nav-link");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-    window.scrollTo({
-      top: targetPosition,
-      behavior: "smooth",
+    // Use plus sign button to toggle menu
+    button.addEventListener("click", () => {
+        if (menu.style.display == "none"){
+            menu.style.display = "inline";
+            button.style.color = "white";
+            // Switch button style when menu open
+            plusSign.style.display = "none";
+            xSign.style.display = "inline";
+        }
+        else{
+            plusSign.style.display = "inline";
+            xSign.style.display = "none";
+            menu.style.display = "none";
+        }
     });
-
-    // Close the responsive navigation menu if open
-    nav.classList.remove("open");
-  });
-});
-
-// Get the height of the first image
-const imgHeight = document.querySelector('.column img').clientHeight;
-
-// Set the height of all images to be the same as the height of the first image
-const imgs = document.querySelectorAll('.column img');
-imgs.forEach(img => {
-  img.style.height = `${imgHeight}px`;
-});
-
-
-// Create a scrollingText function
-function scrollingText(element) {
-  const container = document.createElement("div");
-  container.className = "scrolling-container";
-  container.style.overflow = "hidden";
-  container.style.position = "absolute";
-  container.style.whiteSpace = "nowrap";
-  container.style.top = element.offsetTop + "px";
-  container.style.left = "100%";
-  container.style.fontSize = "24px";
-
-  const clonedElement = element.cloneNode(true);
-  container.appendChild(clonedElement);
-
-  element.parentElement.parentElement.appendChild(container); // change this line
-
-  // Define scroll speed
-  const speed = 2;
-
-  // Animate the scrolling text
-  function animate() {
-    const containerWidth = container.getBoundingClientRect().width;
-    const currentPosition = parseFloat(container.style.left);
-    const newPosition = currentPosition - speed;
-
-    if (newPosition + containerWidth < 0) {
-      container.style.left = "100%";
-    } else {
-      container.style.left = newPosition + "px";
-    }
-
-    requestAnimationFrame(animate);
-  }
-
-  requestAnimationFrame(animate);
-}
-
-
-// Initialize scrollingText function when the page loads
-window.addEventListener("load", function () {
-  const researchHeader = document.querySelector("#research h2");
-  const codeHeader = document.querySelector("#code h2");
-  const teachingHeader = document.querySelector("#teaching h2");
-  const fieldHeader = document.querySelector("#field h2");
-  
-  scrollingText(researchHeader);
-  scrollingText(codeHeader);
-  scrollingText(teachingHeader);
-  scrollingText(fieldHeader);
+    // Close menu when you click on it
+    menu.addEventListener("click", () => {
+        menu.style.display = "none";
+        button.style.display = "inline";
+        // If x sign is showing, switch back to plus sign
+        if (xSign.style.display == "inline"){
+            plusSign.style.display = "inline";
+            xSign.style.display = "none";
+        }
+    });
 });
