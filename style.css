@@ -215,6 +215,32 @@ nav.open ul {
     }
 }
 
+#dropdown-menu{
+    position: fixed;
+    right: 25px;
+    top: 10px;
+    width: 200px;
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+li {
+    padding: 12px 16px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* Add styles for full-screen sections */
 .full-screen-section {
     width: 100%;

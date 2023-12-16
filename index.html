@@ -8,11 +8,35 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
     </style>
+    <script src="scripts.js"></script> 
 </head>
-<body>
+<body id="body">
     <a id="site_menu_button" class="site-menu">
-        <img width="60" alt="plus sign" src="plus.svg"></img>
+        <img id="plusSign" width="60" alt="plus sign" src="plus.svg"></img>
+        <img id="xSign" style="display:none;" width="60" alt="x sign" src="whitecross.svg"></img>
     </a>
+    <div>
+        <ul id="dropdown-menu" style="display: none">
+            <li>
+                <a href="#home">Homepage</a>
+            </li>
+            <li>
+                <a href="#research">Research</a>
+            </li>
+            <li>
+                <a href="#field">Field</a>
+            </li>
+            <li>
+                <a href="#code">Code</a>
+            </li>
+            <li>
+                <a href="#teaching">Teaching</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
         <section id="home" class="full-screen-section home-bg">
