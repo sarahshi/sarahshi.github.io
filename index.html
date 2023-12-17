@@ -12,8 +12,8 @@
 </head>
 <body id="body">
     <a id="site_menu_button" class="site-menu">
-        <img id="plusSign" width="60" alt="plus sign" src="plus.svg"></img>
-        <img id="xSign" style="display:none;" width="60" alt="x sign" src="whitecross.svg"></img>
+        <img id="plusSign" width="60" alt="plus sign" src="img/plus.svg"></img>
+        <img id="xSign" style="display:none;" width="60" alt="x sign" src="img/whitecross.svg"></img>
     </a>
     <div>
         <ul id="dropdown-menu" style="display: none">
@@ -24,17 +24,17 @@
                 <a href="#research">Research</a>
             </li>
             <li>
-                <a href="#field">Field</a>
+                <a href="#code">Code</a>
             </li>
             <li>
-                <a href="#code">Code</a>
+                <a href="#field">Field</a>
             </li>
             <li>
                 <a href="#teaching">Teaching</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#contact">Contact</a>
-            </li>
+            </li> -->
         </ul>
     </div>
 
@@ -43,20 +43,24 @@
             <div style="margin-left: 1.4rem; padding-top: 3rem; line-height: 2;">
                 <h1>Sarah C. Shi</h1> <br>
                 <h2>
-                    Data Science Fellow at the Lamont-Doherty Earth Observatory (2022-Present)
+                    Data Science Fellow at the Lamont-Doherty Earth Observatory (2022-Present) 
                     <br>
                     <br>
                     University of Cambridge, M.Phil in Earth Science (2021-2022); Euretta J. Kellett Fellow
-                    <br>Columbia University, B.A. in Earth Science (2016-2020)
+                    <br>
+                    Columbia University, B.A. in Earth Science (2016-2020)
                     <br>
                     <span>
-                        <a class="custom-links" href="https://www.icloud.com/iclouddrive/0d77rDnV2WgwfSKiwqmtwQSrw#SCS_RESUME_Spring23" target="_blank">C.V.</a> 
+                        <a class="custom-links" href="https://github.com/sarahshi/sarahshi.github.io/blob/main/cv/SCS_CV_Fall23.pdf" target="_blank">C.V.</a> 
                         <br>
                         <a class="custom-links" href="https://github.com/sarahshi" target="_blank">GitHub</a>
                     </span>
                 </h2>
                 <h2>
+                    <a href = "mailto: sarah.shi@columbia.edu">sarah . shi @ columbia . edu</a>
+                    <br>
                     @sarahcshi
+                    <br>
                 </h2>  
             </div>
         </section>
@@ -78,27 +82,68 @@
                 <div class="columns">
                     <div class="column">
                         <figure>
-                            <img style="padding-right: 15px;" src="img/fuegoerupt_filt.jpg" alt="Image description 1">
+                            <img style="padding-right: 15px;" src="img/fuegoerupt_filt.jpg" alt="fuego eruption">
                             <figcaption>Understanding the syn-eruptive dynamics of the Fuego 2018 Eruption </figcaption>
                         </figure>
                     </div>
                     <div class="column">
                         <figure>
                             <img src="img/olivines.png" alt="Image description 2">
-                            <figcaption>Diffusion chronometry and volatile analyses in olivine-hosted melt inclusions </figcaption>
+                            <figcaption>Performing diffusion chronometry in olivine and volatile analyses in olivine-hosted melt inclusions </figcaption>
                         </figure>
                     </div>
                 </div>
                 
                 <div style="padding-bottom: 25px;">
                     <figure>
-                        <img style="width: 100%" src="img/test.png" alt="Image description 5">
-                        <figcaption>Computational methodologies for approaching uncertainty analyses in petrology </figcaption>
+                        <img style="width: 100%" src="img/thermometry.png" alt="Image description 5">
+                        <figcaption>Developing inversions for assessing uncertainty in thermometry </figcaption>
                     </figure>
                 </div>
+
+                <div style="padding-bottom: 25px;">
+                    <figure>
+                        <img style="width: 100%" src="img/thermometry.png" alt="Image description 5">
+                        <figcaption>Inversions for assessing uncertainty in thermometry </figcaption>
+                    </figure>
+                </div>
+
             </div>
         </section>
         
+        <section id="code" style="min-height: fit-content" class="code-bg">
+            <div class="content-wrapper">
+                <div class="marquee">
+                    <div>
+                        <span>
+                            <h2>Code</h2>
+                        </span>
+                        <span>
+                            <h2>Code</h2>
+                        </span>
+                    </div>
+                </div>
+
+                <h6 style="text-align: center"> Open, accessible, reproducible, and collaborative science is critical. I am deeply interested in and excited by the development of open-source tools for handling petrological problems. </h6>
+                
+                <div class="columns">
+                    <div class="column">
+                        <figure>
+                            <img style="padding-right: 15px;" src="img/PyIRoGlass_logo.png" alt="PyIRoGlass Logo">
+                            <figcaption><a href="https://github.com/sarahshi/PyIRoGlass/" target="_blank">PyIRoGlass</a>, a Bayesian MCMC algorithm for fitting baselines to the FTIR spectra of basaltic-andesitic glasses and determining volatile concentrations with uncertainties. </figcaption>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <figure>
+                            <img src="img/mineralML_logo.png" alt="mineralML Logo">
+                            <figcaption><a href="https://github.com/sarahshi/mineralML/" target="_blank">mineralML</a>, a package leveraging machine learning for probabilistic mineral classification in geochemcial data repositories.                             
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
         <section id="field" class="full-screen-section field-bg">
             <div class="content-wrapper">
                 
@@ -145,7 +190,7 @@
                     </div>
                     <div class="column">
                         <figure>
-                            <img src="img/DSC00141.JPG" alt="">
+                            <img src="img/DSC00146.JPG" alt="">
                         </figure>
                     </div>
                 </div>
@@ -226,21 +271,6 @@
             </div>
         </section>
 
-        <section id="code" style="min-height: fit-content" class="code-bg">
-            <div class="content-wrapper">
-                <div class="marquee">
-                    <div>
-                        <span>
-                            <h2>Code</h2>
-                        </span>
-                        <span>
-                            <h2>Code</h2>
-                        </span>
-                    </div>
-                </div>
-                <h6 style="text-align: center">PyBaselines, MIN_ML, Autoencoder</h6>
-        </section>
-
         <section id="teaching" style="min-height: fit-content" class="teaching-bg">
             <div class="content-wrapper">
                 <div class="marquee">
@@ -266,7 +296,7 @@
             </div>
         </section>
 
-        <section id="contact" style="min-height: fit-content; padding-bottom: 30px" class="contact-bg">
+        <!-- <section id="contact" style="min-height: fit-content; padding-bottom: 30px" class="contact-bg">
             <div class="content-wrapper">
                 <div class="marquee">
                     <div>
@@ -280,7 +310,8 @@
                 </div>
                 <h6> Feel free to contact me at sarah (dot) shi (at) columbia (dot) edu</h6>
             </div>
-        </section>
+        </section> -->
+
     </main>
 </body>
 </html>
