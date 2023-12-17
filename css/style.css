@@ -217,7 +217,7 @@ nav.open ul {
 }
 
 .code-bg {
-    background-color: #d7efed; /* Replace with desired color or use 'background-image' property for an image */
+    background-color: #F5CB45; /* d7efed Replace with desired color or use 'background-image' property for an image */
     background-size: 100%; 
 } 
 
@@ -237,6 +237,13 @@ nav.open ul {
     color: rgba(0, 0, 0, 0.85);
     margin-bottom: 1.4px;
 }
+
+.custom-links-caption {
+    font-size: 6vmin;
+    font-weight: 335;
+    color: rgba(0, 0, 0, 0.85);
+}
+
 
 /* .columns {
     display: flex;
@@ -321,7 +328,7 @@ figure {
     font-size: 2.5vmin;
     margin: 15px 0 0 0;
     flex: 1;
-    display: flex;
+    display: block; 
     align-items: center;
     max-height: 100%;
     line-height: 1;
