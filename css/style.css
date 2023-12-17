@@ -321,7 +321,7 @@ figure {
     font-size: 2.5vmin;
     margin: 15px 0 0 0;
     flex: 1;
-    display: flex;
+    display: block; /* flex; */
     align-items: center;
     max-height: 100%;
     line-height: 1;
