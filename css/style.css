@@ -207,12 +207,12 @@ nav.open ul {
 }
 
 .research-bg {
-    background-color: #366EC3; /* Replace with desired color or use 'background-image' property for an image */
+    background-color: #366DC4; /* Replace with desired color or use 'background-image' property for an image */
     background-size: 100%; 
 }
  
 .field-bg {
-    background-color: #F3E4E7; /* Replace with desired color or use 'background-image' property for an image */
+    background-color: #F1E3E7; /* Replace with desired color or use 'background-image' property for an image */
     background-size: 100%; 
 }
 
@@ -237,8 +237,6 @@ nav.open ul {
     color: rgba(0, 0, 0, 0.85);
     margin-bottom: 1.4px;
 }
-
-
 
 /* .columns {
     display: flex;
