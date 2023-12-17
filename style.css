@@ -129,7 +129,7 @@ p {
 }
 
 .marquee {
-    min-height: 8rem;
+    min-height: 10rem;
     min-width: 100%;
     overflow: hidden;
     position: relative;
@@ -293,7 +293,6 @@ ul{
     color: #45a15c;
     margin: 5px 0 0 0;
     text-decoration: none;
-    flex: 1; 
     display: flex; 
     max-height: 100%;
 }
