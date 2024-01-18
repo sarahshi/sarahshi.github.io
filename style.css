@@ -1,11 +1,29 @@
 /* Add fonts from fonts directory */
 
+/* Define Helvetica Neue Light */
 @font-face {
-    font-family: 'Helvetica Neue Light';
-    src: url('././fonts/HelveticaNeue-Light.otf');
-    font-weight: normal;
+    font-family: 'Helvetica Neue';
+    src: url('./fonts/HelveticaNeue-Light.otf');
+    font-weight: 300;
     font-style: normal;
 }
+
+/* Define Helvetica Neue Regular */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./fonts/HelveticaNeue-Regular.otf');
+    font-weight: normal; /* Normal weight */
+    font-style: normal;
+}
+
+/* Define Helvetica Neue Regular Italic */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./fonts/HelveticaNeue-RegularItalic.otf');
+    font-weight: normal; /* Normal weight for italic */
+    font-style: italic;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -39,7 +57,8 @@ html{
 }
 
 body {
-    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300; /* This will apply the light weight */
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.85);
 }
@@ -47,7 +66,18 @@ body {
 body, html {
     margin: 0;
     padding: 0;
-    font-family: "HelveticaNeue-Light", Helvetica, sans-serif, "Helvetica Neue Light";
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300; /* This will apply the light weight */
+}
+
+b {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold; /* This will use the bold font defined in @font-face */
+}
+
+i {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-style: italic; /* This will use the italic font defined in @font-face */
 }
 
 /* Add styles for header, main, and footer */
@@ -267,6 +297,11 @@ ul{
 .code-bg {
     background-color: #F5CB45;
 } 
+
+.publications-bg {
+    background-color: #9AC685;
+} 
+
  
 .field-bg {
     background-color: #F3E4E7;
