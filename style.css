@@ -80,6 +80,12 @@ i {
     font-style: italic; /* This will use the italic font defined in @font-face */
 }
 
+sub {
+    font-family: 'Helvetica Neue'; /* If you want to apply Helvetica Neue to subscript */
+    font-size: smaller; /* Makes the font size smaller than the surrounding text */
+    vertical-align: sub; /* Aligns the text to subscript position */
+}
+
 /* Add styles for header, main, and footer */
 header {
     padding: 0;
