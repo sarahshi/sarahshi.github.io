@@ -324,6 +324,7 @@ ul{
     text-decoration: none;
 }
 
+
 .columns {
     display: flex;
 }
@@ -343,6 +344,7 @@ ul{
     max-width: 1200px;
     object-fit: contain; 
 }
+
 
 .columns_photo {
     display: flex;
@@ -374,7 +376,7 @@ ul{
 }
 
 .caption-columns{
-    margin-bottom: 5px!important;
+    margin-bottom: 5px; 
 }
 
 figure {
