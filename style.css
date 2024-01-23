@@ -1,6 +1,5 @@
 /* Add fonts from fonts directory */
 
-/* Define Helvetica Neue Light */
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('./fonts/HelveticaNeue-Light.otf');
@@ -8,7 +7,6 @@
     font-style: normal;
 }
 
-/* Define Helvetica Neue Regular */
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('./fonts/HelveticaNeue-Regular.otf');
@@ -16,14 +14,12 @@
     font-style: normal;
 }
 
-/* Define Helvetica Neue Regular Italic */
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('./fonts/HelveticaNeue-RegularItalic.otf');
     font-weight: normal; /* Normal weight for italic */
     font-style: italic;
 }
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -301,20 +297,20 @@ ul{
 }
 
 .code-bg {
-    background-color: #F5CB45;
+    background-color: #9AC685;
 } 
 
 .publications-bg {
-    background-color: #9AC685;
+    background-color: #F5CB45;
 } 
 
  
 .field-bg {
-    background-color: #F3E4E7;
+    background-color: #FFDEDF;
 }
 
 .teaching-bg {
-    background-color: #FFEDAD;
+    background-color: #E3DAFF;
 } 
 
 .custom-links {
