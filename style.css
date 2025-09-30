@@ -382,6 +382,16 @@ ul{
     margin-bottom: 5px; 
 }
 
+.rotating {
+    display: inline-block;
+    animation: spin 8.3s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
 figure {
     display: flex;
     flex-direction: column;
