@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Shi</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16.png">
 </head>
 
 <body id="body">
-    <a id="site_menu_button" class="site-menu">
-        <img id="plusSign" width="60" alt="plus sign" src="img/plus.svg"></img>
-        <img id="xSign" style="display:none;" width="60" alt="x sign" src="img/whitecross.svg"></img>
-    </a>
-    <div>
-        <ul id="dropdown-menu" style="display: none">
+    <button id="site_menu_button" class="site-menu" type="button" aria-label="Open site menu" aria-controls="dropdown-menu" aria-expanded="false">
+        <img id="plusSign" width="60" alt="" src="img/plus.svg">
+        <img id="xSign" width="60" alt="" src="img/whitecross.svg" hidden>
+    </button>
+    <nav aria-label="Site navigation">
+        <ul id="dropdown-menu" hidden>
             <li>
                 <a href="#home">Homepage</a>
             </li>
@@ -38,7 +38,7 @@
                 <a href="#field">Field</a>
             </li>
         </ul>
-    </div>
+    </nav>
 
     <main>
         <section id="home" class="full-screen-section home-bg">
@@ -355,24 +355,24 @@
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC09555.jpg" alt="">
+                            <img src="img/DSC09555.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC09648.jpg" alt="">
+                            <img src="img/DSC09648.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC09772.jpg" alt="">
+                            <img src="img/DSC09772.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC00156.JPG" alt="">
+                            <img src="img/DSC00156.JPG" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -382,24 +382,24 @@
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC08546.jpg" alt="">
+                            <img src="img/DSC08546.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC08649.jpg" alt="">
+                            <img src="img/DSC08649.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC08638.jpg" alt="">
+                            <img src="img/DSC08638.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC08759.jpg" alt="">
+                            <img src="img/DSC08759.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -409,24 +409,24 @@
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/P1440684.jpg" alt="">
+                            <img src="img/P1440684.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/P1440829.jpg" alt="">
+                            <img src="img/P1440829.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/P1440768.jpg" alt="">
+                            <img src="img/P1440768.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC05540.jpg" alt="">
+                            <img src="img/DSC05540.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -436,24 +436,24 @@
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC02920.jpg" alt="">
+                            <img src="img/DSC02920.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC02930.jpg" alt="">
+                            <img src="img/DSC02930.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC02355.jpg" alt="">
+                            <img src="img/DSC02355.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC02492.jpg" alt="">
+                            <img src="img/DSC02492.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -464,29 +464,30 @@
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC00011.jpg" alt="">
+                            <img src="img/DSC00011.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC00046.jpg" alt="">
+                            <img src="img/DSC00046.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <div class="columns_photo">
                     <div class="column_photo">
                         <figure class="grid-figure-left">
-                            <img src="img/DSC00141.jpg" alt="">
+                            <img src="img/DSC00141.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                     <div class="column_photo">
                         <figure>
-                            <img src="img/DSC00110.jpg" alt="">
+                            <img src="img/DSC00110.jpg" alt="" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
                 <h6 style="text-align: center">Cornwall (ESB Field Geology), UK </h6>
                 <br>
+            </div>
         </section>
     </main>
 </body>

@@ -164,8 +164,18 @@ p {
 
 .site-menu{
     right: 1.7rem; 
+    top: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.site-menu:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 4px;
 }
 
 .marquee {
@@ -260,10 +270,13 @@ nav.open ul {
     right: 25px;
     top: 10px;
     width: 200px;
-    background-color: #000000;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 2px;
     z-index: 1;
+}
+
+#dropdown-menu:not([hidden]) {
+    display: block;
 }
 
 li {
@@ -418,6 +431,10 @@ figcaption a {
 
 @media (max-width: 1000px) {
     .columns {
+        flex-direction: column;
+    }
+
+    .columns_photo {
         flex-direction: column;
     }
 } 

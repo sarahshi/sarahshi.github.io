@@ -1,33 +1,31 @@
-window.addEventListener("load", () => {
-    // Get elements from page
+document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("site_menu_button");
     const menu = document.getElementById("dropdown-menu");
     const xSign = document.getElementById("xSign");
     const plusSign = document.getElementById("plusSign");
 
-    // Use plus sign button to toggle menu
+    const setMenuOpen = (isOpen) => {
+        menu.hidden = !isOpen;
+        plusSign.hidden = isOpen;
+        xSign.hidden = !isOpen;
+        button.setAttribute("aria-expanded", String(isOpen));
+        button.setAttribute("aria-label", isOpen ? "Close site menu" : "Open site menu");
+    };
+
     button.addEventListener("click", () => {
-        if (menu.style.display == "none"){
-            menu.style.display = "inline";
-            button.style.color = "white";
-            // Switch button style when menu open
-            plusSign.style.display = "none";
-            xSign.style.display = "inline";
-        }
-        else{
-            plusSign.style.display = "inline";
-            xSign.style.display = "none";
-            menu.style.display = "none";
+        setMenuOpen(menu.hidden);
+    });
+
+    menu.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+            setMenuOpen(false);
         }
     });
-    // Close menu when you click on it
-    menu.addEventListener("click", () => {
-        menu.style.display = "none";
-        button.style.display = "inline";
-        // If x sign is showing, switch back to plus sign
-        if (xSign.style.display == "inline"){
-            plusSign.style.display = "inline";
-            xSign.style.display = "none";
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !menu.hidden) {
+            setMenuOpen(false);
+            button.focus();
         }
     });
 });
