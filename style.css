@@ -51,6 +51,7 @@ time, mark, audio, video {
 
 html{
     font-size: 68.48%;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -414,7 +415,7 @@ figure {
 
 figcaption {
     text-align: center;
-    font-weight: 335;
+    font-weight: 300;
     font-size: 1.8rem;
     margin: 5px 0 0 0;
     flex: 1;
@@ -423,7 +424,7 @@ figcaption {
     max-height: 100%;
   }
 figcaption a {
-    font-weight: 335;
+    font-weight: 300;
     font-size: 1.8rem;
     color: #45a15c;
     text-decoration: none;
